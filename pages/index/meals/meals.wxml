@@ -1,10 +1,21 @@
 <!--pages/index/meals/meals.wxml-->
 <view>
-  <text class="title">每日三餐</text>
-  <view class="mealsName-box">
-    <block wx:for="{{mealsNameList}}" wx:key="*this">
-      <text class='{{className}}' bindtap="clickTab" data-id="{{item.id}}">{{item.text}}</text>
-    </block>
-  </view>
+	<text class="title">每日三餐</text>
+	<view class="mealsName-box">
+		<block wx:for="{{mealsNameList}}" wx:key="*this">
+			<view class="{{item.id === chooseId ? mealsActiviy : mealsName}}" bindtap="clickTab" data-current="{{item.id}}">{{item.text}}</view>
+		</block>
+	</view>
+	<swiper current="{{chooseId}}" duration="300" circular="true" bindchange="switchTab">
+		<swiper-item wx:for="{{mealsTabContent}}" wx:key="*this">
+			<scroll-view scroll-y="true" class="scroll-box">
+				<view class="scroll-view-item_H">
+					<view class="flex-meals-img">
+						<cover-image class="img-item" style="margin: 0 2% 0;" src="{{item.img[0]}}"></cover-image>
+						<cover-image class="img-item" src="{{item.img[1]}}"></cover-image>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+	</swiper>
 </view>
-
