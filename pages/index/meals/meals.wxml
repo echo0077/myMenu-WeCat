@@ -1,0 +1,10 @@
+<!--pages/index/meals/meals.wxml-->
+<view>
+  <text class="title">每日三餐</text>
+  <view class="mealsName-box">
+    <block wx:for="{{mealsNameList}}" wx:key="*this">
+      <text class='{{className}}' bindtap="clickTab" data-id="{{item.id}}">{{item.text}}</text>
+    </block>
+  </view>
+</view>
+

@@ -1,0 +1,51 @@
+{
+  "id": "2544749",
+  "name": "weChat",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5203256",
+      "name": "花键",
+      "font_class": "huajian",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "6279237",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "14493782",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "18670101",
+      "name": "vip",
+      "font_class": "vip",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "20776126",
+      "name": "热门话题备份",
+      "font_class": "remenhuatibeifen",
+      "unicode": "e7ad",
+      "unicode_decimal": 59309
+    },
+    {
+      "icon_id": "17721272",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

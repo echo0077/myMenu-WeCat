@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/carousel/carousel",
+    "pages/video/index",
+    "pages/classify/index",
+    "pages/menu/index",
+    "pages/collect/index",
+    "pages/index/meals/meals"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f15a4f",
+    "navigationBarTitleText": "我的菜谱",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f15a4f",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "iconPath": "images/tab/home_a.png",
+        "selectedIconPath": "images/tab/home_b.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/tab/video_a.png",
+        "selectedIconPath": "images/tab/video_b.png",
+        "pagePath": "pages/video/index",
+        "text": "视频"
+      },
+      {
+        "iconPath": "images/tab/classify_a.png",
+        "selectedIconPath": "images/tab/classify_b.png",
+        "pagePath": "pages/classify/index",
+        "text": "分类"
+      },
+      {
+        "iconPath": "images/tab/menu_a.png",
+        "selectedIconPath": "images/tab/menu_b.png",
+        "pagePath": "pages/menu/index",
+        "text": "菜单"
+      },
+      {
+        "iconPath": "images/tab/collect_a.png",
+        "selectedIconPath": "images/tab/collect_b.png",
+        "pagePath": "pages/collect/index",
+        "text": "收藏"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

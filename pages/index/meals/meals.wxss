@@ -1,0 +1,21 @@
+/* pages/index/meals/meals.wxss */
+.title {
+  color: #999;
+  display: block;
+  margin-bottom: 15px;
+}
+.mealsName-box{
+  display: flex;
+}
+.mealsName-text{
+  display: block;
+  width: 90px;
+  text-align: center
+}
+.mealsName-active{
+  display: block;
+  width: 90px;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}

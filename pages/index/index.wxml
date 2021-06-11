@@ -1,0 +1,5 @@
+<!--index.wxml 店铺首页，引入轮播图-->
+<view>
+  <carousel />
+  <meals />
+</view>
