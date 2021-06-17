@@ -1,5 +1,4 @@
 /* pages/index/carousel/carousel.wxss */
-/* @import "../../../iconfont1/iconfont.wxss";  */
 .top-search-box{
   width: 100%;
   height: 70px;
@@ -38,7 +37,7 @@ swiper{
 }
 .swiper-item{
   border-radius: 10%;
-  width: 350px;
+  width: 320px;
   margin-left: 12px;
 }
 .user-swiper-item{
@@ -77,31 +76,36 @@ swiper{
   justify-content: space-between;
   margin: 0 15px;
 }
-.recommen-box{
+#recommen-box{
   width: 110px;
-  background-color: #fe9b95;
   height: 45px;
   line-height: 45px;
   border-radius: 21px;
-  box-shadow: 0px 0px 12px rgb(255 155 149 / 50%);
   text-align: center;
   margin-bottom: 20px;
-  color: #fff;
 }
-.recommen-box span{
-  font-size: 18px;
+.recommen-box-other{
+  box-shadow: 0px 0px 12px rgb(204 204 204 / 50%);
+}
+.recommen-box-color{
+  background-color: #fe9b95;
+  color: #fff;
+  box-shadow: 0px 0px 12px rgb(255 155 149 / 50%);
+}
+#recommen-box text{
+  font-size: 15px;
   margin-right: 5px;
 }
-.recommen-box:nth-child(1){
+#recommen-box:nth-child(1){
   width: 160px;
 }
-.recommen-box:nth-child(3) span {
+#recommen-box:nth-child(3) .icon-remenhuatibeifen {
   font-size: 20px;
   margin-right: 0;
 }
-.recommen-box:nth-child(4) span {
+#recommen-box:nth-child(4) text {
   font-size: 14px;
 }
-.recommen-box:nth-child(2){
+#recommen-box:nth-child(2){
   width: 160px;
 }

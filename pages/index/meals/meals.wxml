@@ -3,19 +3,49 @@
 	<text class="title">每日三餐</text>
 	<view class="mealsName-box">
 		<block wx:for="{{mealsNameList}}" wx:key="*this">
-			<view class="{{item.id === chooseId ? mealsActiviy : mealsName}}" bindtap="clickTab" data-current="{{item.id}}">{{item.text}}</view>
+			<view class="{{item.id == chooseId ? mealsActiviy : mealsName}}" bindtap="clickTab" data-current="{{item.id}}">{{item.text}}</view>
 		</block>
 	</view>
-	<swiper current="{{chooseId}}" duration="300" circular="true" bindchange="switchTab">
+	<swiper current="{{chooseId}}" circular="true" bindchange="switchTab">
 		<swiper-item wx:for="{{mealsTabContent}}" wx:key="*this">
 			<scroll-view scroll-y="true" class="scroll-box">
 				<view class="scroll-view-item_H">
 					<view class="flex-meals-img">
-						<cover-image class="img-item" style="margin: 0 2% 0;" src="{{item.img[0]}}"></cover-image>
-						<cover-image class="img-item" src="{{item.img[1]}}"></cover-image>
+						<view class="swiper-text-box" style="margin: 0 2%;">
+							<cover-image class="img-item" src="{{item.img[0]}}"></cover-image>
+							<view class="swiper-text-box1">
+								<text class="text-name">{{item.name1}}</text>
+								<text class="text-msg">{{item.msg}}</text>
+							</view>
+						</view>
+						<view class="swiper-text-box">
+							<cover-image class="img-item" src="{{item.img[1]}}"></cover-image>
+							<view class="swiper-text-box1">
+								<text class="text-name">{{item.name2}}</text>
+								<text class="text-msg">{{item.msg}}</text>
+							</view>
+						</view>
 					</view>
 				</view>
 			</scroll-view>
 		</swiper-item>
 	</swiper>
+	<view>
+		<swiper 
+			class="meals-carousel-box"
+			indicator-color="rgba(254, 155, 149, .5)"
+			indicator-active-color="#ff4c39"
+			indicator-dots="true"
+			interval="2000" 
+			duration="500"
+			autoplay="true"
+			circular="true"
+		>
+			<block wx:for="{{mealsCarousel}}" wx:key="*this">
+				<swiper-item>
+					<cover-image class="mealsCarousel-item" src="{{item}}"></cover-image>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
 </view>

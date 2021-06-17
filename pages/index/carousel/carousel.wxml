@@ -6,14 +6,17 @@
         auto-focus 
         placeholder="搜索百万免费菜谱"
       />
-      <span class="iconfont icon-sousuo" id="sousuo_style"></span>
+      <text class="iconfont icon-sousuo" id="sousuo_style"></text>
   </view>
   <view class="flex-wrp content-carousel" style="flex-direction:column;">
     <view class="flex-item flex-item-V demo-text-1" style="padding-top: 60px;">
       <text class="carousel-title">今日热门</text>
       <view class="page-section page-section-spacing swiper">
-        <swiper indicator-dots="{{indicatorDots}}"
-          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <swiper
+          next-margin="20"
+          previous-margin="20"
+          snap-to-edge="{{true}}"
+        >
           <block wx:for="{{carouselList}}" wx:key="*this">
             <swiper-item>
               <cover-image class="swiper-item" src="{{item.img}}"></cover-image>
@@ -29,8 +32,8 @@
       <text class="carousel-title">为你推荐</text>
       <view class="recommen-content">
         <block wx:for="{{recommenList}}" wx:key="*this">
-          <view class="recommen-box">
-            <span class="{{item.icon}}"></span>
+          <view id="recommen-box" class="{{curre == item.text ? curreClass : otherClass}}" bindtap="clickTab" data-current="{{item.text}}">
+            <text class="{{item.icon}}"></text>
             <text>{{item.text}}</text>
           </view>
         </block>

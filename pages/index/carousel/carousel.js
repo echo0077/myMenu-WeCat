@@ -24,15 +24,20 @@ Page({
       {icon: 'iconfont icon-remenhuatibeifen', text: '热门专题'},
       {icon: 'iconfont icon-fenlei', text: '菜谱分类'},
       {icon: 'iconfont icon-shipin', text: '视频菜谱'}],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: false,
-    circular: false,
-    interval: 2000,
-    duration: 500,
-    previousMargin: '200px',
-    nextMargin: '200px'
+    curre: '每日优惠',
+    curreClass: 'recommen-box-color',
+    otherClass: 'recommen-box-other',
   },
+
+  /**
+   * JS
+   */
+  clickTab(e) {
+    this.setData({
+      curre: e.currentTarget.dataset.current
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
