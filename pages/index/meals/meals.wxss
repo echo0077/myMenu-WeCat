@@ -59,7 +59,7 @@
   background-color: #fff2f2;
 }
 .meals-carousel-box{
-  height: 200px;
+  height: 160px;
 }
 .mealsCarousel-item{
   width: 98%;
